@@ -1,0 +1,24 @@
+= HC04 Library for Arduino =
+
+It only works with HC-04 sensor with accuracy from 10CM to 3M. Only digital ports. In instantiation, the first parameter is the Trig pin and the second is the Echo pin. To get the distance in meters use the method getDistanceM without parameters and the distance in centimeters use the method getDistanceCM also without parameters. getDistanceM returns float and getDistanceCM returns int
+
+For more information about this library please visit us at
+https://github.com/GuiTurati/HC04.git
+
+== License ==
+
+Copyright (c) 2010 Arduino LLC. All right reserved.
+
+This library is free software; you can redistribute it and/or
+modify it under the terms of the GNU Lesser General Public
+License as published by the Free Software Foundation; either
+version 2.1 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public
+License along with this library; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA

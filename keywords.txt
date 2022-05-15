@@ -1,0 +1,21 @@
+#######################################
+# Syntax Coloring Map For HC04
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1) - Tipos de Dados
+#######################################
+
+HC04	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2) - Métodos e Funções
+#######################################
+
+getDistanceM	KEYWORD2
+getDistanceCM	KEYWORD2
+
+#######################################
+# Constants (LITERAL1) - Constantes
+#######################################
+
