@@ -1,12 +1,12 @@
 #######################################
-# Syntax Coloring Map For HC04
+# Syntax Coloring Map For HC-SR04
 #######################################
 
 #######################################
 # Datatypes (KEYWORD1) - Tipos de Dados
 #######################################
 
-HC04	KEYWORD1
+HC-SR04	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2) - Métodos e Funções
