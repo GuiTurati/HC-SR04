@@ -25,7 +25,11 @@ float HC-SR04::getDistanceM() {
 	delayMicroseconds(10);
 	digitalWrite(pinoTrig, LOW);
 	resultadoM = (pulseIn(pinoEcho, HIGH)/58.0);
-	return resultadoM / 100;
+	if (resultadoM > 2 && resultadoM < 400) {
+		return resultadoM / 100;
+	} else if (resultadoM < 2 || resultadoM > 400) {
+		return 0;
+	}
 }  
 int HC-SR04::getDistanceCM() {
 	resultadoCM = 0;
@@ -35,5 +39,9 @@ int HC-SR04::getDistanceCM() {
 	delayMicroseconds(10);
 	digitalWrite(pinoTrig, LOW);
 	resultadoCM = pulseIn(pinoEcho, HIGH)/58.0;
-	return resultadoCM;
+	if (resultadoCM > 2 && resultadoCM < 400) {
+		return resultadoCM;
+	} else if (resultadoCM < 2 || resultadoCM > 400) {
+		return 0;
+	}
 }  

@@ -1,9 +1,34 @@
 = HC-SR04 Library for Arduino =
 
-It only works with HC-SR04 sensor with accuracy from 10CM to 3M. Only digital ports. In instantiation, the first parameter is the Trig pin and the second is the Echo pin. To get the distance in meters use the method getDistanceM without parameters and the distance in centimeters use the method getDistanceCM also without parameters. getDistanceM returns float and getDistanceCM returns int
+It only works with the HC-SR04 sensor with an accuracy of 2CM to 4M. Only digital ports. In instantiation, the first parameter is the Trig pin and the second is the Echo pin. To get the distance in meters use the method getDistanceM without parameters and the distance in centimeters use the method getDistanceCM also without parameters. getDistanceM returns float and getDistanceCM returns int
 
 For more information about this library please visit us at
 https://github.com/GuiTurati/HC-SR04.git
+
+=== Reference ===
+
+== Include ==
+#include "HC-SR04.h"
+
+== Instance ==
+HC-SR04 sensor(byte pinTrig, byte pinEcho);
+
+== Methods ==
+float getDistanceM();
+	//Returns Distance in Meters
+	Parameters:
+	- none:
+	Return:
+	- Distance in Meters (float)
+	
+int getDistanceM();
+	//Returns Distance in Centimeters
+	Parameters:
+	- none:
+	Return:
+	- Distance in Centimeters (int)
+	
+	
 
 == License ==
 
