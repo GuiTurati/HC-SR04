@@ -1,6 +1,6 @@
-#include <HC-SR04.h>
+#include <HCSR04.h>
 
-HC-SR04 sensor(3, 2);//Trig //Echo
+HCSR04 sensor(3, 2);//Trig //Echo
 
 void setup() {
   Serial.begin(9600);
